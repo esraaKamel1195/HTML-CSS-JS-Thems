@@ -1,0 +1,34 @@
+<link
+  rel="stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+  integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+  crossorigin="anonymous"
+/>
+
+<a href="Course/to_regist">Register new user</a>
+
+<h4 class="alert alert-success">register</h4>
+
+<h4 class="alert alert-info">updated</h4>
+<table class="table table-inverse">
+  <thead>
+    <tr>
+      <th>id</th>
+      <th>username</th>
+      <th>email</th>
+      <th>password</th>
+      <th>edit</th>
+      <th>delete</th>
+    </tr>
+  </thead>
+  <tr>
+    <td><?php echo $value->id; ?></td>
+    <td><?php echo $value->username; ?></td>
+    <td><?php echo $value->email; ?></td>
+    <td><?php echo $value->password; ?></td>
+    <td><a href="Course/edit/id" class="btn btn-success">edit</a></td>
+    <td><a href="Course/delete/id" class="btn btn-danger">delete</a></td>
+  </tr>
+
+  <?php endforeach ?>
+</table>
