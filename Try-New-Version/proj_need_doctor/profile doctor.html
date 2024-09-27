@@ -1,19 +1,19 @@
 <html>
     <head>
        <!--<link rel="stylesheet" href="css/bootstrap.css">-->
-       <link rel="stylesheet" href="<?php echo base_url() ; ?>css/style2.css">
+       <link rel="stylesheet" href="css/style2.css">
        
                <meta charset="UTF-8">
                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                 <meta name="description" content="">
-                 <meta name="author" content="">
+              <meta name="description" content="">
+              <meta name="author" content="">
                <title>MEDICAL SERVICES </title>
-               <link rel="stylesheet" href="<?php echo base_url() ; ?>css/font-awesome.min.css">
-               <link rel="stylesheet" href="<?php echo base_url() ; ?>css/bootstrap.min.css">
-               <link rel="stylesheet" href="<?php echo base_url() ; ?>css/style.css">
+               <link rel="stylesheet" href="css/font-awesome.min.css">
+               <link rel="stylesheet" href="css/bootstrap.min.css">
+               <link rel="stylesheet" href="css/style.css">
               <!--<link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,400,800,700,300' rel='stylesheet' type='text/css'> 
                <link href='http://fonts.googleapis.com/css?family=BenchNine:300,400,700' rel='stylesheet' type='text/css'>-->
-               <script src="<?php echo base_url() ; ?>js/modernizr.js"></script>
+               <script src="js/modernizr.js"></script>
        
        
                <style>
@@ -32,7 +32,7 @@
         <div class="row">
           <div class="col-xs-5 header-logo">
             <br>
-            <a href="<?php echo base_url() ; ?>need_doctor/indexdoc"><img src="<?php echo base_url() ; ?>images/l.jpg" alt="" class="img-responsive logo"></a>
+            <a href="need_doctor/indexdoc"><img src="images/l.jpg" alt="" class="img-responsive logo"></a>
           </div>
   
           <div class="col-md-7">
@@ -50,9 +50,9 @@
                   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   
                   <ul class="nav navbar-nav navbar-right">
-                    <li><a class="menu active" href="<?php echo base_url() ; ?>need_doctor/indexdoc" >Home</a></li>
+                    <li><a class="menu active" href="need_doctor/indexdoc" >Home</a></li>
                     
-                    <li><a class="menu" href="<?php echo base_url() ; ?>need_doctor/doctor"> Doctors</a></li>
+                    <li><a class="menu" href="need_doctor/doctor"> Doctors</a></li>
                   </ul>
                 </div>
 				</div>
@@ -60,16 +60,13 @@
           </div>
         </div>
       </div>
-    </header> 
-        
+    </header>
         <div class="body">
-        
-            
         <?php foreach ($doctor as $value): ?>
            <form id="f" method="post" action="<?= base_url()?>need_doctor/update/<?= $value->id?>" >
-                <h2>Get started with change profil</h2>
+                <h2>Get started with change profile</h2>
                
-               <h2>Get started with change profil </h2>
+               <h2>Get started with change profile </h2>
                <hr>
                <br>
                <table>
@@ -117,12 +114,12 @@
                   <div><label for="place">Change address:</label>
                   <div>
                   <select  name="street" value="<?php echo $value->street; ?>" id="s" style="height:30px;width:200px;" required>
-                          <option  name="street" value="<?php echo $value->street; ?>"><?php echo $value->street; ?></option>
-                          <option  name="street" value="النميس">شارع النميس</option>
-                          <option  name="street" value="الجمهوريه">شارع الجمهوريه</option>
-                          <option  name="street" value="الهلالى">شارع الهلالى</option>
-                          <option  name="street" value="المحطه"> شارع المحطه</option>
-              </select>
+                    <option  name="street" value="<?php echo $value->street; ?>"><?php echo $value->street; ?></option>
+                    <option  name="street" value="النميس">شارع النميس</option>
+                    <option  name="street" value="الجمهوريه">شارع الجمهوريه</option>
+                    <option  name="street" value="الهلالى">شارع الهلالى</option>
+                    <option  name="street" value="المحطه"> شارع المحطه</option>
+                  </select>
               
               
               <div><label for="num">Change clinic phone number:</label></div>
@@ -164,12 +161,12 @@
 
       <!-- script tags
 		============================================================= -->
-    <script src="<?php echo base_url() ; ?>js/jquery-2.1.1.js"></script>
+    <script src="js/jquery-2.1.1.js"></script>
     <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
-    <script src="<?php echo base_url() ; ?>js/gmaps.js"></script>
-    <script src="<?php echo base_url() ; ?>js/smoothscroll.js"></script>
-    <script src="<?php echo base_url() ; ?>js/bootstrap.min.js"></script>
-    <script src="<?php echo base_url() ; ?>js/custom.js"></script>
+    <script src="js/gmaps.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
   
     </body>
 </html>

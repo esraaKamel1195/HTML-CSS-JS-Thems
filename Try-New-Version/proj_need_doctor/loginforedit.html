@@ -1,19 +1,18 @@
 <html>
     <head>
-       <link rel="stylesheet" href="css/style2.css">
-       
+       <!-- <link rel="stylesheet" href="css/bootstrap.css">-->
+       <link rel="stylesheet" href="<?php echo base_url() ; ?>css/style2.css">
                <meta charset="UTF-8">
                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                 <meta name="description" content="">
-                 <meta name="author" content="">
+              <meta name="description" content="">
+              <meta name="author" content="">
                <title>MEDICAL SERVICES </title>
-               <link rel="stylesheet" href="css/font-awesome.min.css">
-               <link rel="stylesheet" href="css/bootstrap.min.css">
-               <link rel="stylesheet" href="css/style.css">
+               <link rel="stylesheet" href="<?php echo base_url() ; ?>css/font-awesome.min.css">
+               <link rel="stylesheet" href="<?php echo base_url() ; ?>css/bootstrap.min.css">
+               <link rel="stylesheet" href="<?php echo base_url() ; ?>css/style.css">
                <link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,400,800,700,300' rel='stylesheet' type='text/css'>
                <link href='http://fonts.googleapis.com/css?family=BenchNine:300,400,700' rel='stylesheet' type='text/css'>
-               <script src="js/modernizr.js"></script>
-        
+               <script src="<?php echo base_url() ; ?>js/modernizr.js"></script>
         <style>
         
             td{
@@ -56,7 +55,7 @@
         <div class="row">
           <div class="col-xs-5 header-logo">
             <br>
-            <a href="need_doctor/index"><img src="images/l.jpg" alt="" class="img-responsive logo"></a>
+            <a href="<?php echo base_url() ; ?>need_doctor/index"><img src="<?php echo base_url() ; ?>images/l.jpg" alt="" class="img-responsive logo"></a>
           </div>
   
           <div class="col-md-7">
@@ -76,11 +75,11 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   
                   <ul class="nav navbar-nav navbar-right">
-                    <li><a class="menu active" href="need_doctor/index" ><font size="2 px">Home</font></a></li>
+                    <li><a class="menu active" href="<?php echo base_url() ; ?>need_doctor/index" ><font size="2 px">Home</font></a></li>
                    
                     
-                <li><a class="menu" href="need_doctor/register"><font size="2 px"> register</font></a></li>
-                 <li><a class="menu" href="need_doctor/login"><font size="2 px"> login</font></a></li>
+                <li><a class="menu" href="<?php echo base_url() ; ?>need_doctor/register"><font size="2 px"> register</font></a></li>
+                 <li><a class="menu" href="<?php echo base_url() ; ?>need_doctor/login"><font size="2 px"> login</font></a></li>
                   </ul>
                 </div><!-- /navbar-collapse -->
               </div><!-- / .container-fluid -->
@@ -89,18 +88,21 @@
         </div>
       </div>
     </header> 
+        
+        
+        
         <div class="body2">
         
             
         
-           <form id="f2"  action="need_doctor/login_information/admin" method="POST">
+           <form id="f2" action="<?php echo base_url();?>need_doctor/profiledoc" method="POST">
                <br>
                <br>
                 <br>
                <br>
                 <br>
                <br>
-               <h2>Log In As Admin</h2><br>
+               <h2>log in as a doctor</h2><br>
                <hr>
                
                <br>
@@ -152,16 +154,11 @@
 
       <!-- script tags
 	============================================================= -->
-	<script src="js/jquery-2.1.1.js"></script>
-	<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
-	<script src="js/gmaps.js"></script>
-	<script src="js/smoothscroll.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/custom.js"></script>
-
-
-
-
-    </body>
+    <script src="<?php echo base_url() ; ?>js/jquery-2.1.1.js"></script>
+    <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+    <script src="<?php echo base_url() ; ?>js/gmaps.js"></script>
+    <script src="<?php echo base_url() ; ?>js/smoothscroll.js"></script>
+    <script src="<?php echo base_url() ; ?>js/bootstrap.min.js"></script>
+    <script src="<?php echo base_url() ; ?>js/custom.js"></script>
+  </body>
 </html>
-
