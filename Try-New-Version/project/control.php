@@ -12,13 +12,11 @@
     </tr>
   </thead>
 <?php foreach ($news as $value): ?>
-  
   <tr>
         <td><?php echo $value->new_id;  ?></td>
         <td><a href="<?= base_url()?>Project/shownew/<?php echo $value->new_id?>"><?php echo $value->title;  ?></td></a>
         <td><a href="<?= base_url()?>ProjAdmin/edit/<?php echo  $value->new_id?>" class="btn btn-success">edit</a></td>
         <td><a href="<?= base_url()?>ProjAdmin/delete/<?php echo  $value->new_id?>" class="btn btn-danger">delete</a></td>
-    </tr>
-   
+  </tr> 
 <?php endforeach ?>
 </table>

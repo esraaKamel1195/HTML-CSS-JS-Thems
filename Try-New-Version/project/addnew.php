@@ -1,11 +1,11 @@
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-<?php
-$this->load->library('form_validation');
-if(!empty(validation_errors()))
-{
-	echo validation_errors();
-}
-?>
+<!-- <?php
+// $this->load->library('form_validation');
+// if(!empty(validation_errors()))
+// {
+// 	echo validation_errors();
+// }
+?> -->
 <center>
 <form style="margin-top: 10px; width: 20%;" class="form-control-lg" action="<?= base_url()?>ProjAdmin/Addnew" method="post" >
 	Title :	<br><input style="margin-top: 20px;" type="text" name="title" class="form-control"><br>
