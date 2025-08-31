@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: 300px;
+        height: 200px;
+        border: 10px solid red;
+      }
+      img {
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      ondragover="event.preventDefault()"
+      ondrop="dropHandler(this)"
+      class="container"
+    ></div>
+    <img
+      draggable="true"
+      id="img1"
+      src="center1.PNG"
+      alt="center1"
+    />
+    <img
+      draggable="true"
+      id="img2"
+      src="center2.PNG"
+      alt="center2"
+    />
+    <script>
+      var imgElement = document.getElementById("img1");
+      function dropHandler(element) {
+        var imgElementChild = imgElement.cloneNode();
+        element.appendChild(imgElement);
+      }
+    </script>
+  </body>
+</html>

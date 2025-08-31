@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      meter,
+      progress {
+        width: 200px;
+        height: 50px;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Christen C# 10</h2>
+
+    <!-- Represent Value Graph  -->
+    <!-- indecator -->
+    <meter min="0" max="100" value="10"></meter>
+    <meter min="0" max="100" value="50"></meter>
+    <meter min="20" max="60" value="37" optimum=""></meter>
+
+    <!-- progress -->
+    <progress max="100" value="20"></progress>
+    <input
+      type="button"
+      value="Increament"
+      onclick="var t = setInterval(increase, 500)"
+    />
+
+    <script>
+      function increase() {
+        // get progress
+        var proElem = document.getElementById("progress1");
+        // increase value
+        // set progress value
+        proElem.value += 10; 
+      }
+    </script>
+  </body>
+</html>
